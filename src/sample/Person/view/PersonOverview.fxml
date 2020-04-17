@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="363.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Person.view.PersonOverviewController">
+   <children>
+      <SplitPane dividerPositions="0.4126984126984127" layoutX="153.0" layoutY="70.0" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #B40404;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="personTable" layoutX="-12.0" layoutY="49.0" prefHeight="298.0" prefWidth="175.0" style="-fx-background-color: #b40404;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="firstNameColumn" prefWidth="75.0" style="-fx-background-color: #fe2e2e;" text="Ім'я" />
+                      <TableColumn fx:id="lastNameColumn" prefWidth="75.0" style="-fx-background-color: #fe2e2e;" text="Прізвище" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #FE2E2E;" styleClass="background">
+               <children>
+                  <Label layoutX="104.0" layoutY="51.0" prefHeight="52.0" prefWidth="394.0" styleClass="label-header" text="Інформація студента" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Book Antiqua" size="31.0" />
+                     </font></Label>
+                  <GridPane layoutX="5.0" layoutY="94.0" prefHeight="173.0" prefWidth="393.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="94.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Ім'я" textFill="WHITE">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Прізвище" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Вулиця" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Місто" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Поштовий індекс" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="День Народження" textFill="WHITE" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="firstNameLabel" styleClass="label-bright" text="Label" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lastNameLabel" styleClass="label-bright" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="streetLabel" styleClass="label-bright" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="cityLabel" styleClass="label-bright" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="postalCodeLabel" styleClass="label-bright" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="birthdayLabel" styleClass="label-bright" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <ButtonBar layoutX="54.0" layoutY="250.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                    <buttons>
+                      <Button mnemonicParsing="false" onAction="#handleNewPerson" style="-fx-background-color: #DF0101#DF0101;" text="Добавити..." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleEditPerson" style="-fx-background-color: #DF0101#DF0101;" text="Змінити..." textFill="WHITE" />
+                        <Button minWidth="66.0" mnemonicParsing="false" onAction="#handleDeletePerson" prefHeight="19.0" prefWidth="120.0" style="-fx-background-color: #DF0101#DF0101;" text="Видалити" textFill="WHITE" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

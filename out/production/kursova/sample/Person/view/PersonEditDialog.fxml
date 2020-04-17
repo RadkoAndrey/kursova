@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="354.0" prefWidth="439.0" style="-fx-background-color: #FE2E2E;" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Person.view.PersonEditDialogController">
+   <children>
+      <GridPane layoutX="30.0" layoutY="28.0" prefHeight="254.0" prefWidth="404.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="111.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="316.0" minWidth="10.0" prefWidth="261.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Ім'я" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="15.0" />
+               </font></Label>
+            <Label text="Прізвище" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Book Antiqua Bold" size="15.0" />
+               </font></Label>
+            <Label text="Вулиця" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Book Antiqua Bold" size="15.0" />
+               </font></Label>
+            <Label text="Місто" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Book Antiqua Bold" size="15.0" />
+               </font></Label>
+            <Label text="Поштовий індекс" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Book Antiqua Bold" size="15.0" />
+               </font></Label>
+            <Label text="День народження" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Book Antiqua Bold" size="15.0" />
+               </font></Label>
+            <TextField fx:id="firstNameField" prefHeight="26.0" prefWidth="263.0" GridPane.columnIndex="1" />
+            <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="streetField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="cityField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="postalCodeField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="birthdayField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="176.0" layoutY="233.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <buttons>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#handleOk" style="-fx-background-color: #b40404;" text="Зберегти" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+          <Button mnemonicParsing="false" onAction="#handleCancel" prefWidth="120.0" style="-fx-background-color: #b40404;" text="Закрити" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

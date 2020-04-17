@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>sample.Person.util.LocalDateAdapter</OriginalElement>
+  <nodes>
+    <node x="-303.0" y="226.0">sample.Person.util.LocalDateAdapter</node>
+    <node x="-19.0" y="1.0">sample.Person.model.Person</node>
+    <node x="342.0" y="448.0">sample.Person.view.RootLayoutController</node>
+    <node x="-287.0" y="22.0">sample.Person.model.PersonListWrapper</node>
+    <node x="421.25" y="0.0">sample.Person.MainApp</node>
+    <node x="-300.0" y="106.0">sample.Person.util.DateUtil</node>
+    <node x="-329.0" y="327.0">sample.Person.view.BirthdayStatisticsController</node>
+    <node x="11.0" y="430.0">sample.Person.view.PersonEditDialogController</node>
+    <node x="553.0" y="427.0">sample.Person.view.PersonOverviewController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="sample.Person.view.PersonOverviewController" target="sample.Person.MainApp">
+      <point x="0.0" y="-47.5" />
+      <point x="663.0" y="402.0" />
+      <point x="614.75" y="402.0" />
+      <point x="64.5" y="188.5" />
+    </edge>
+    <edge source="sample.Person.view.PersonEditDialogController" target="sample.Person.model.Person">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="189.5" />
+    </edge>
+    <edge source="sample.Person.view.RootLayoutController" target="sample.Person.MainApp">
+      <point x="0.0" y="-26.5" />
+      <point x="437.5" y="402.0" />
+      <point x="485.75" y="402.0" />
+      <point x="-64.5" y="188.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="215.5" y="315.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
